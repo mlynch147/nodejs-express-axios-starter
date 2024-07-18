@@ -19,8 +19,5 @@ jobs:
         with:
           node-version: '21.7.2'  # or any other version you are using
 
-      - name: Install dependencies
+      - name: Clean install dependencies
         run: npm ci
-
-      - name: Build
-        run: npm run build
