@@ -23,4 +23,7 @@ jobs:
         run: npm install
 
       - name: Run linter
-        run: npm run linter -- src/ views/
+        run: |
+          npm run linter -- src/
+          npm run linter -- views/
+
