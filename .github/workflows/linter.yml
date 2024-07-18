@@ -20,7 +20,9 @@ jobs:
           node-version: '14'  # or any other version you are using
 
       - name: Install dependencies
-        run: npm install
+        run: npm ci
 
       - name: Run linter
-        run: npm run linter
+        run: |
+          npm run linter -- src/
+          npm run linter -- views/
