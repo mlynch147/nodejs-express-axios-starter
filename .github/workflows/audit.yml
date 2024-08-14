@@ -25,4 +25,4 @@ jobs:
         run: npm install
 
       - name: Run audit
-        run: npm audit
+        run: npm audit fix
